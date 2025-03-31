@@ -69,6 +69,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: arn:aws:iam::349843802119:role/GitHUbDemo1
+          role-session-name: GitHubActions
           aws-region: ap-south-1
       - name: Deploy site
         id: deploy
